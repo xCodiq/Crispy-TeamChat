@@ -1,0 +1,15 @@
+########## Crispy-TeamChat ##########
+supply-message: "&4Please supply a message"
+no-permissions: "&4Insufficient permissions"
+
+chats:
+  staff-chat:
+    permission: "staffchat.use"
+    commands: ["staffchat", "sc"]
+    format: "&8(&3&lSTAFF&8) &b%player_name% &8> &b{MESSAGE}"
+    console-format: "&8(&3&lSTAFF&8) &bCONSOLE &8> &b{MESSAGE}"
+  admin-chat:
+    permission: "adminchat.use"
+    commands: ["adminchat", "ac"]
+    format: "&8(&c&lADMIN&8) &e%player_name% &8> &e{MESSAGE}"
+    console-format: "&8(&c&lADMIN&8) &eCONSOLE &8> &e{MESSAGE}"

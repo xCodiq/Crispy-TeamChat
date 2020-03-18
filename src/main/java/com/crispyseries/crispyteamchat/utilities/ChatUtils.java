@@ -1,0 +1,64 @@
+/*
+ *   ~
+ *   ~ Copyright 2020 NeverEndingPvP. All rights reserved.
+ *   ~
+ *   ~ Licensed under the NeverEndingPvP License, Version 1.0 (the "License");
+ *   ~ you may not use this file except in compliance with the License.
+ *   ~
+ *   ~ You are not allowed to edit the source.
+ *   ~ You are not allowed to edit this text.
+ *   ~ You are not allowed to sell this source.
+ *   ~ You are not allowed to distribute this source in any way.
+ *   ~ You are not allowed to claim this as yours.
+ *   ~ You are not allowed to distribute.
+ *   ~ You are not allowed to make own terms.
+ *   ~ You are not allowed to place own warranty.
+ *   ~ You are not allowed to make any sublicense.
+ *   ~
+ *   ~ Unless required by applicable law or agreed to in writing, software
+ *   ~ distributed under the License is distributed on an "AS IS" BASIS.
+ *   ~
+ *   ~ Author: xCodiq (Discord: Codiq#3662)
+ *   ~
+ */
+
+package com.crispyseries.crispyteamchat.utilities;
+
+import org.bukkit.ChatColor;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ChatUtils {
+
+    /**
+     * Instantiates a new Chat utils.
+     */
+    public ChatUtils() {
+        throw new IllegalStateException("Cannot construct a utilities class");
+    }
+
+    /**
+     * Get a formatted string using {@link ChatColor#translateAlternateColorCodes}
+     *
+     * @param string The string to format and translate the colors of.
+     * @return the formatted and colored string.
+     * @see org.bukkit.ChatColor#translateAlternateColorCodes(char, String)
+     */
+
+    public static String format(String string) {
+        return ChatColor.translateAlternateColorCodes('&', string);
+    }
+
+    /**
+     * Get a formatted list using {@link ChatColor#translateAlternateColorCodes}
+     *
+     * @param list The list to format and translate the colors of.
+     * @return the formatted and colored list.
+     * @see com.crispyseries.crispyteamchat.utilities.ChatUtils#format(String)
+     */
+
+    public static List<String> format(List<String> list) {
+        return list.stream().map(ChatUtils::format).collect(Collectors.toList());
+    }
+}

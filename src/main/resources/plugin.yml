@@ -1,0 +1,12 @@
+name: Crispy-TeamChat
+version: ${project.version}
+main: com.crispyseries.crispyteamchat.TeamChat
+authors: [xCodiq, OutbackAustralia, NeverEndingPvP]
+description: CrispySeries Customizable Team Chat Channels
+website: www.xcodiq.dev
+softdepend: [PlaceholderAPI]
+
+commands:
+  crispyteamchat:
+    description: CrispyTeamChat command
+    aliases: ["crispytc"]
