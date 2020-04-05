@@ -6,7 +6,7 @@
 
     <groupId>com.crispyseries</groupId>
     <artifactId>Crispy-TeamChat</artifactId>
-    <version>paper-1.0.0-STABLE</version>
+    <version>paper-1.1.0-STABLE</version>
     <packaging>jar</packaging>
 
     <name>Crispy-TeamChat</name>

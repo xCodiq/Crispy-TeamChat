@@ -89,7 +89,7 @@ public class ChatListener implements Listener {
                 // Loop through all the players with the chat permission
                 for (Player player1 : playersToSend) {
                     format = PlaceholderAPI.setPlaceholders(
-                            player1, chat.getFormat().replace("{MESSAGE}", builder.toString().trim()));
+                            player, chat.getFormat().replace("{MESSAGE}", builder.toString().trim()));
 
                     player1.sendMessage(ChatUtils.format(format));
                 }
